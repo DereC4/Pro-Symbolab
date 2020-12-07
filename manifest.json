@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Symbolab Bypass",
+  "description": "A work in progress to allow students to learn math without being blocked by a paywall",
+  "version": "0.0.3",
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["*://*.symbolab.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "img.png",
+    "default_title": "Symp"
+  }
+  "homepage_url": "https://github.com/DereC4/Pro-Symbolab",
+}
